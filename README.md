@@ -1,10 +1,14 @@
-# Cloud Mode Fee
+# Cloud Mode Fee + Flutterwave
 
-A starter payment/fee collection website.
+This version connects the payment form to Flutterwave Standard checkout.
 
-## Important
-The payment form in this starter site is only a front-end demo. It does NOT process real payments yet.
+1. Create/verify a Flutterwave merchant account.
+2. Copy `.env.example` to `.env`.
+3. Put your Flutterwave secret key in `FLW_SECRET_KEY`.
+4. Set `PUBLIC_URL` to the real HTTPS domain of this website.
+5. Run `npm install`, then `npm start`.
+6. Configure your Flutterwave redirect/webhook settings as appropriate.
+7. Before treating a payment as successful, verify the transaction server-side.
 
-Before accepting money, connect a legitimate payment provider (for example, a licensed payment gateway available in your country), configure your merchant account, and test transactions in the provider's sandbox.
-
-Replace the placeholder email and phone number in `index.html`.
+Never put the secret key in browser JavaScript or commit `.env` to source control.
+Use Flutterwave test credentials first, then switch to live credentials after testing.

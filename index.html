@@ -1,86 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cloud Mode Fee | Easy & Secure Payments</title>
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cloud Mode Fee | Secure Payments</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,Helvetica,sans-serif;background:#f5f8ff;color:#13213c;line-height:1.6}
-header{background:#fff;border-bottom:1px solid #e8edf7;position:sticky;top:0;z-index:10}
-.nav{max-width:1100px;margin:auto;padding:18px 22px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-size:24px;font-weight:800;color:#2457d6}
-.nav a{text-decoration:none;color:#33415c;margin-left:22px;font-weight:600}
-.hero{max-width:1100px;margin:55px auto;padding:20px 22px;display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}
-.hero h1{font-size:52px;line-height:1.08;margin-bottom:18px}
-.hero h1 span{color:#2457d6}
-.hero p{font-size:18px;color:#647089;max-width:600px;margin-bottom:28px}
-.btn{display:inline-block;background:#2457d6;color:#fff;padding:14px 24px;border-radius:10px;text-decoration:none;font-weight:700}
-.card{background:#fff;border-radius:20px;padding:30px;box-shadow:0 15px 40px rgba(36,87,214,.12)}
-.card h2{margin-bottom:12px}
-input,select{width:100%;padding:13px;margin:8px 0 14px;border:1px solid #dce3f0;border-radius:9px;font-size:15px}
-button{width:100%;border:0;cursor:pointer;background:#2457d6;color:white;padding:14px;border-radius:9px;font-size:16px;font-weight:700}
-section{max-width:1100px;margin:20px auto 70px;padding:0 22px}
-.section-title{text-align:center;margin-bottom:30px}
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.feature{background:#fff;padding:25px;border-radius:16px;border:1px solid #e8edf7}
-.feature h3{margin-bottom:8px}
-.feature p{color:#68758c}
-footer{background:#101b32;color:#d9e0ee;padding:30px;text-align:center}
-.small{font-size:13px;color:#7c879b;margin-top:10px}
-@media(max-width:760px){.hero{grid-template-columns:1fr}.hero h1{font-size:40px}.features{grid-template-columns:1fr}.nav a{margin-left:10px;font-size:14px}}
-</style>
-</head>
-<body>
-<header>
-  <div class="nav">
-    <div class="logo">Cloud Mode Fee</div>
-    <nav><a href="#home">Home</a><a href="#services">Services</a><a href="#pay">Pay</a><a href="#contact">Contact</a></nav>
-  </div>
-</header>
-
-<main>
-<section class="hero" id="home">
-  <div>
-    <h1>Simple, secure <span>fee payments.</span></h1>
-    <p>Cloud Mode Fee makes it easy for customers, students, clients and organizations to submit and manage payments online.</p>
-    <a class="btn" href="#pay">Make a Payment</a>
-  </div>
-  <div class="card" id="pay">
-    <h2>Make a Payment</h2>
-    <p class="small">Demo form — connect your preferred payment provider before accepting real payments.</p>
-    <form onsubmit="event.preventDefault(); alert('Payment form submitted. Connect a payment gateway to process real payments.');">
-      <input type="text" placeholder="Full name" required>
-      <input type="email" placeholder="Email address" required>
-      <input type="text" placeholder="Reference / purpose" required>
-      <input type="number" placeholder="Amount" min="1" required>
-      <select required><option value="">Select payment method</option><option>Bank Transfer</option><option>Card</option><option>Other</option></select>
-      <button type="submit">Continue to Payment</button>
-    </form>
-  </div>
-</section>
-
-<section id="services">
-  <div class="section-title"><h2>Why use Cloud Mode Fee?</h2><p>Designed for a smooth payment experience.</p></div>
-  <div class="features">
-    <div class="feature"><h3>Easy Payments</h3><p>Give customers a simple way to submit fee payments online.</p></div>
-    <div class="feature"><h3>Payment Records</h3><p>Use payment references to make transactions easier to identify.</p></div>
-    <div class="feature"><h3>Mobile Friendly</h3><p>The site works across phones, tablets and computers.</p></div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="card">
-    <h2>Contact Cloud Mode Fee</h2>
-    <p>Email: your-email@example.com</p>
-    <p>Phone: +234 XXX XXX XXXX</p>
-    <p class="small">Replace the placeholder contact details with your real business information.</p>
-  </div>
-</section>
-</main>
-
-<footer>
-  <p>© 2026 Cloud Mode Fee. All rights reserved.</p>
-</footer>
-</body>
-</html>
+body{font-family:Arial;margin:0;background:#f5f8ff;color:#13213c}.wrap{max-width:900px;margin:50px auto;padding:20px}
+.card{background:#fff;padding:30px;border-radius:18px;box-shadow:0 12px 35px #dfe6f5}h1{color:#2457d6}
+input{width:100%;padding:13px;margin:7px 0 14px;border:1px solid #d8e0ef;border-radius:8px;box-sizing:border-box}
+button{width:100%;padding:14px;border:0;border-radius:8px;background:#2457d6;color:#fff;font-weight:700;font-size:16px;cursor:pointer}
+#msg{margin-top:15px;color:#52617a}.brand{font-weight:800;font-size:25px;color:#2457d6;margin-bottom:25px}
+</style></head>
+<body><div class="wrap"><div class="brand">Cloud Mode Fee</div><div class="card">
+<h1>Make a secure payment</h1><p>Pay fees online using supported Nigerian payment methods.</p>
+<form id="pay">
+<input name="name" placeholder="Full name" required>
+<input name="email" type="email" placeholder="Email address" required>
+<input name="reference" placeholder="What are you paying for?" required>
+<input name="amount" type="number" min="100" step="1" placeholder="Amount (NGN)" required>
+<button>Continue to secure payment</button>
+</form><div id="msg"></div>
+</div></div>
+<script>
+document.getElementById("pay").addEventListener("submit", async e=>{
+ e.preventDefault(); const msg=document.getElementById("msg"); msg.textContent="Opening secure checkout…";
+ const body=Object.fromEntries(new FormData(e.target));
+ try{const r=await fetch("/api/create-payment",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+ const d=await r.json(); if(!r.ok) throw new Error(d.error||"Payment error"); location.href=d.link;
+ }catch(err){msg.textContent=err.message}
+});
+</script></body></html>
